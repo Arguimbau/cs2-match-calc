@@ -10,8 +10,7 @@ from rank_map import Rank_map
 def scrape_matches_with_selenium():
     options = Options()
     options.add_argument("--headless")
-    service = Service("./geckodriver")
-    driver = webdriver.Firefox(service=service, options=options)
+    driver = webdriver.Firefox(options=options)
     URL = "https://csstats.gg/player/" + input("Enter the URL of the player's stats page: https://csstats.gg/player/")
 
     # If URL is pasted from site, remove the site URL

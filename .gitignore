@@ -1,3 +1,5 @@
 venv
 .mypy_cache
 .DS_Store
+__pycachce__
+__pycache__/
